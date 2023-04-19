@@ -7,7 +7,7 @@ if you run the patch file the program will ask you for the path of the arxml fil
 .
 .
 for testing there are 3 files provided "NormalCase.arxml" is the normal file from the given sample 
-you can copy the path of the file and pasting it in the program make sure the pass is right and is not between ""
+you can copy the path of the file and pasting it in the program make sure the pass is right and is not between "  "
 Exmaple: C:\Users\Mark\OneDrive\Desktop\final test\EmptyFile.arxml
 this case will create a new .arxml file in the same path of the original file and same name concatenated with "_mod.arxml"
 .
