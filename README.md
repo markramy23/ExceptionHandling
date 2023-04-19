@@ -10,6 +10,7 @@ for testing there are 3 files provided "NormalCase.arxml" is the normal file fro
 you can copy the path of the file and pasting it in the program make sure the pass is right and is not between "  "
 Exmaple: C:\Users\Mark\OneDrive\Desktop\final test\EmptyFile.arxml
 this case will create a new .arxml file in the same path of the original file and same name concatenated with "_mod.arxml"
+note: it will also print the data in the .arxml file after sorting which is not required but used for testing
 .
 .
 .
