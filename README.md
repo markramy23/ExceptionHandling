@@ -56,7 +56,7 @@ a program that reads an ARXML file containing a list of containers, each with a 
 
  run the text.bat file and enter the name of the file you want to test example : **NormalCase.arxml** 
 
- if you want to test your own file enter the path of your file without any (" ") Example: **C:\Users\Mark\OneDrive\Desktop\NormalCase.arxml**
+ if you want to test your own file: enter the path of your file without any (" ") Example: **C:\Users\Mark\OneDrive\Desktop\NormalCase.arxml**
 
 
 
