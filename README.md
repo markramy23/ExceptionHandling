@@ -14,7 +14,7 @@ a program that reads an ARXML file containing a list of containers, each with a 
     
 
 
-## Detailed discribtion
+## Detailed describtion
 
 
 > -  #### Container class:
