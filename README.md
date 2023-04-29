@@ -1,20 +1,36 @@
+
 # ExceptionHandling
-in The ExceptionHandling folder you will find the src folder which has all the source codes for the classes created
-inside it there is a dist folder containing a batch file for the application 
-if you run the batch file the program will ask you for the path of the .arxml file you want to provide 
-.
-.
-.
-.
-for testing there are 3 files provided "NormalCase.arxml" is the normal file from the given sample 
-you can copy the path of the file and pasting it in the program make sure the path is right and is not between "  ".
-.
-.
-Exmaple: C:\Users\Mark\OneDrive\Desktop\final test\EmptyFile.arxml
-this case will create a new .arxml file in the same path of the original file and same name concatenated with "_mod.arxml"
-note: it will also print the data in the .arxml file after sorting which is not required but used for testing
-.
-.
-.
-.
-The other two files "EmptyFile" and "Wrongformatcase" is for testing the error cases
+
+a program that reads an ARXML file containing a list of containers, each with a unique ID, and reorders the containers alphabetically by their name sub- container “"SHORT-NAME"
+
+
+
+## Files Created
+
+ - [ExceptionHandling(main class)](https://github.com/markramy23/ExceptionHandling/blob/e0d5036c4c4c8f90642761f93e8c9e071f669099/ExceptionHandling/src/exceptionhandling/ExceptionHandling.java)
+ - [Container class](https://github.com/markramy23/ExceptionHandling/blob/e0d5036c4c4c8f90642761f93e8c9e071f669099/ExceptionHandling/src/exceptionhandling/Container.java)
+ - [NotVaildAutosarFileException class](https://github.com/markramy23/ExceptionHandling/blob/e0d5036c4c4c8f90642761f93e8c9e071f669099/ExceptionHandling/src/exceptionhandling/NotVaildAutosarFileException.java)
+ - [EmptyAutosarFileException](https://github.com/markramy23/ExceptionHandling/blob/e0d5036c4c4c8f90642761f93e8c9e071f669099/ExceptionHandling/src/exceptionhandling/EmptyAutosarFileException.java)
+    
+
+
+## Detailed discribtion
+
+
+> -  #### Container class:
+            Class made to contain the information 
+            Extracted from the arxml file.
+
+            it is comparable and compares according 
+            to the Short Name of the file 
+> - #### ExceptionHandling class 
+            it has the main method and two other methods
+             one called ParseXml which reads the arxml file
+             it takes the file name/path as an argument
+             and return a list of Containers.
+            
+            The other method is Writexml which 
+            takes the file name/path as an argument and the list of
+             containers after sorting it and transform the list 
+             to an arxml file with the same name passed to it 
+             concatenated with "_mod.arxml".
