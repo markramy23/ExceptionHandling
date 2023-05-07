@@ -31,21 +31,21 @@ public class ExceptionHandling {
            List<Container> containers=new ArrayList<Container>();
            containers=ParseXml(filename);
            Collections.sort(containers);
-            System.out.println(containers.toString());
+            System.out.println(containers);
             writexml(containers,filename);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e);;
         }
         
         
     }
     public static List<Container> ParseXml(String fileName) throws Exception {
         if(fileName.endsWith(".arxml")==false){
-            throw new NotVaildAutosarFileException();
+            throw new NotVaildAutosarFileException("wrong format file");
         }
          File f=new File(fileName);
          if(f.length()==0){
-             throw new EmptyAutosarFileException();
+             throw new EmptyAutosarFileException("file is empty");
          }
     List<Container> containers = new ArrayList<Container>();
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -106,7 +106,7 @@ public class ExceptionHandling {
             longName.appendChild(document.createTextNode(c.getLong_Name()));
             container.appendChild(longName);
     }
-  TransformerFactory transformerFactory = TransformerFactory.newInstance();
+              TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
