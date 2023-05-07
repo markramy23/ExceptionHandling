@@ -9,5 +9,12 @@ import java.io.*;
  * @author Mark
  */
 public class NotVaildAutosarFileException extends IOException {
+
+    public NotVaildAutosarFileException() {
+    }
+
+    public NotVaildAutosarFileException(String message) {
+        super(message);
+    }
     
 }
