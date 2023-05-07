@@ -9,5 +9,12 @@ package exceptionhandling;
  * @author Mark
  */
 public class EmptyAutosarFileException extends RuntimeException{
+
+    public EmptyAutosarFileException() {
+    }
+
+    public EmptyAutosarFileException(String message) {
+        super(message);
+    }
     
 }
